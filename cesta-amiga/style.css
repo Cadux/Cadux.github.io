@@ -1,0 +1,182 @@
+html,body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;  
+}
+/*Menu*/
+header{
+    background-color: tomato;
+    color: white;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -20px;
+    margin-left: 5%;
+}
+.menu{
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+}
+li{
+    float: left;
+    padding: 8px 40px;
+    margin: 0 10px 0 0;
+    color: yellowgreen;
+    border-radius: 10px 10px;
+    border: solid 2px rgb(84, 114, 40);
+}
+li:hover{
+    background-color: rgb(85, 163, 85);
+}
+a:visited{
+    color: white;
+}
+/*Capa*/
+.imagem_fundo{
+    background: url(visual/cesta-amiga-fundo.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color:  greenyellow;
+    text-align: center;
+}
+.titulo{
+    margin-top: 0;
+    font-size: 90px;
+    padding: 212px 1px 0px 1px ;
+}
+.subtitulo{
+    margin-top: 0;
+    font-size: 38px;
+    padding: 1px 1px;
+}
+.parceiro{
+    font-size: 30px;
+    padding: 1px 1px ;
+    background-color: tomato;
+    border-radius: 0px 20px 10px 0px;
+}
+.parceiro:hover{
+    background-color: white;
+    color: tomato;
+}
+/*Seções*/
+section{
+    float: left;
+    padding: 20px;
+}
+#projetos{
+    background-color: whitesmoke
+}
+
+.coluna{
+    float: left;
+    padding: 0 5%;
+    position: relative;
+}
+.dois{
+    width: 40%;
+}
+.tres{
+    width: 29%;
+    height: 210px;
+    padding: 2% 2%;
+}
+.img_projetos{
+    height: 100%;
+    width: 100%;
+}
+.mural{
+    padding: 30px 135px 0px 10px;
+    text-align: justify;
+    width: 0%;
+}
+.marca{
+    width: 100px;
+}
+.resultados{
+    width: 6%;
+}
+.icon{
+    padding: 2% 47%;
+}
+.botao{
+    padding: 5px 5%;
+    border-radius: 10px 10px;
+    border: solid 2px red;
+    background-color: tomato;
+    color: white;
+    margin: 0px 0px 0px 145px;
+}
+.ajuste{
+    margin: 0px 0px 0px 175px;
+}
+.botao:hover{
+    background-color: white;
+    color: tomato;
+}
+
+/*Rodapé*/
+footer{
+    float: left;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(136, 47, 31);
+   
+}
+/*Elementos visuais*/
+p{
+    color: grey;
+}
+h3{
+    color: white;
+    font-size: 30px;
+    background-color: tomato;
+    border-radius: 10px 20px;
+    border: 2px solid red;
+}
+h4{
+    color: rgb(118, 165, 47);
+}
+/*Elementos de texto*/
+.centro{
+    text-align: center;
+}
+.justificado{
+    text-align: justify;
+}
+@media all and (max-width: 768px){
+    .coluna, .dois, .tres, .icon, .img_projetos, .imagem_fundo, .parceiro, .mural{
+        display: block;
+        width: 80%;
+        padding: 0;
+        float: none;
+        margin: 10px auto;
+    }
+    .menu,.subtitulo{
+        visibility: hidden;
+    }
+    .icon{
+        width: 10%;
+    }
+    .titulo{
+        margin-top: 0;
+        padding: 50px 1px 1px 1px ;
+    }
+    .logocentro{
+        width: 100%;
+        position: relative;
+        text-align: center;
+        
+    }
+    .logo{
+        transform: translateX(-65%);
+    }
+}
+
